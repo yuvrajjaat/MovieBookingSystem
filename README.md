@@ -5,15 +5,13 @@ A modern, real-time movie booking platform that allows users to browse cinemas, 
 ---
 
 ## 📑 Table of Contents
-- [About](#-about)
-- [Features](#-features)
-- [Tech Stack](#-tech-stack)
-- [Screenshots](#-screenshots)
-- [Installation](#-installation)
-- [Usage](#-usage)
-- [API Endpoints](#-api-endpoints)
-- [Contributing](#-contributing)
-- [License](#-license)
+- About
+- Features
+- Tech Stack
+- Screenshots
+- Installation
+- Usage
+- API Endpoints
 
 ---
 
@@ -68,22 +66,26 @@ MovieBook is a full-stack cinema booking application designed to solve the commo
 ## 📸 Screenshots
 
 ### 🏠 Home Page - Cinema Selection
-<img width="1485" height="751" alt="image" src="https://github.com/user-attachments/assets/765de175-1acd-41a4-9676-32f106c1672e" />
+<img width="1485" height="751" alt="Screenshot 2025-09-21 134214" src="https://github.com/user-attachments/assets/0d2be299-2a7e-4003-bc65-44b855f81d31" />
+
 
 *Browse available cinemas in your area*
 
 ### 🎬 Cinema Page - Movie Listings
-<img width="1468" height="753" alt="image" src="https://github.com/user-attachments/assets/118ccb30-d6d6-4f2d-b032-be009c4469ca" />
+<img width="1468" height="753" alt="Screenshot 2025-09-21 134230" src="https://github.com/user-attachments/assets/49aa63fd-2623-4905-8650-90eb1ffc2232" />
+
 
 *View movies and showtimes for selected cinema*
 
 ### 💺 Seat Selection - Interactive Booking
-<img width="1294" height="843" alt="image" src="https://github.com/user-attachments/assets/212dab40-a319-4c47-87ad-855287d6697a" />
+<img width="1294" height="843" alt="Screenshot 2025-09-21 134414" src="https://github.com/user-attachments/assets/7f98856f-fd1b-4d27-bb44-6311c9c0e11a" />
+
 
 *Select seats with real-time availability updates*
 
 ### 📋 Booking History
-<img width="1340" height="855" alt="image" src="https://github.com/user-attachments/assets/c09afd3e-24a9-4d16-b65c-896b2650c061" />
+<img width="1340" height="855" alt="Screenshot 2025-09-21 134443" src="https://github.com/user-attachments/assets/cb0203a4-99c7-4789-a904-32105c625a52" />
+
 
 *Track your movie booking history*
 
