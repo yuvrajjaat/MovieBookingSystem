@@ -1,0 +1,364 @@
+/* Root CSS Variables */
+:root {
+  --primary: #2563eb;
+  --primary-hover: #1d4ed8;
+  --secondary: #f8f9fa;
+  --success: #28a745;
+  --warning: #ffc107;
+  --danger: #dc3545;
+  --text-primary: #212529;
+  --text-secondary: #6c757d;
+  --background: #ffffff;
+  --card-bg: #ffffff;
+  --border-color: #dee2e6;
+  --shadow: 0 2px 4px rgba(0,0,0,0.1);
+  --radius: 6px;
+}
+
+/* Global Styles */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f5f5f5;
+  min-height: 100vh;
+  color: var(--text-primary);
+  line-height: 1.5;
+}
+
+/* Container */
+.container {
+  max-width: 1000px;
+  margin: 20px auto;
+  padding: 20px;
+  background: var(--card-bg);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  border: 1px solid var(--border-color);
+}
+
+/* Header */
+.header {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 15px;
+  border-bottom: 1px solid var(--border-color);
+  margin-bottom: 20px;
+}
+
+.header h2 {
+  margin: 0;
+  color: var(--text-primary);
+  font-weight: 600;
+  font-size: 1.8rem;
+}
+
+/* Cinema Cards */
+.cinema-card {
+  padding: 15px;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius);
+  margin-bottom: 10px;
+  cursor: pointer;
+  background: var(--card-bg);
+  transition: border-color 0.2s;
+}
+
+.cinema-card:hover {
+  border-color: var(--primary);
+}
+
+.cinema-card strong {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  display: block;
+  margin-bottom: 5px;
+}
+
+/* Movie Cards */
+.movie-card {
+  padding: 15px;
+  background: var(--card-bg);
+  border-radius: var(--radius);
+  margin-bottom: 15px;
+  border: 1px solid var(--border-color);
+}
+
+.movie-card strong {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  display: block;
+  margin-bottom: 10px;
+}
+
+.movie-card > div {
+  color: var(--text-secondary);
+  margin-bottom: 10px;
+}
+
+/* Show Buttons */
+.show-btn {
+  margin: 5px 5px 5px 0;
+  padding: 8px 15px;
+  border-radius: var(--radius);
+  background: var(--primary);
+  color: white;
+  cursor: pointer;
+  border: none;
+  font-weight: normal;
+  font-size: 0.9rem;
+  transition: background-color 0.2s;
+}
+
+.show-btn:hover {
+  background: var(--primary-hover);
+}
+
+/* Seat Styling */
+.seat {
+  width: 32px;
+  height: 32px;
+  border-radius: 4px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2px;
+  font-size: 0.7rem;
+  cursor: pointer;
+  border: 1px solid #ccc;
+}
+
+.seat.available {
+  background: #f8f9fa;
+  border-color: #28a745;
+  color: #28a745;
+}
+
+.seat.available:hover {
+  background: #e9f7ef;
+}
+
+.seat.booked {
+  background: #f8d7da;
+  border-color: #dc3545;
+  color: #721c24;
+  cursor: not-allowed;
+}
+
+.seat.blocked {
+  background: #fff3cd;
+  border-color: #ffc107;
+  color: #856404;
+  cursor: not-allowed;
+}
+
+.seat.selected {
+  background: var(--primary);
+  border-color: var(--primary);
+  color: white;
+}
+
+/* Grid Layout */
+.grid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background: #f8f9fa;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius);
+  margin: 15px 0;
+}
+
+.row {
+  display: flex;
+  margin-bottom: 3px;
+}
+
+/* Screen */
+.screen {
+  width: 60%;
+  height: 6px;
+  background: #6c757d;
+  border-radius: 3px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.screen::after {
+  content: 'SCREEN';
+  position: absolute;
+  top: -25px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+}
+
+/* Buttons */
+.btn {
+  padding: 8px 16px;
+  border-radius: var(--radius);
+  cursor: pointer;
+  border: none;
+  background: var(--primary);
+  color: white;
+  font-weight: normal;
+  font-size: 0.9rem;
+  transition: background-color 0.2s;
+}
+
+.btn:hover {
+  background: var(--primary-hover);
+}
+
+.btn.btn-secondary {
+  background: #6c757d;
+  color: white;
+}
+
+.btn.btn-secondary:hover {
+  background: #5a6268;
+}
+
+.btn.btn-success {
+  background: var(--success);
+}
+
+.btn.btn-success:hover {
+  background: #218838;
+}
+
+/* Top Bar */
+.topbar {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+/* Typography */
+.small {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+}
+
+h3 {
+  color: var(--text-primary);
+  font-weight: 600;
+  margin-bottom: 15px;
+  font-size: 1.4rem;
+}
+
+/* Notice */
+.notice {
+  padding: 12px;
+  background: #fff3cd;
+  border: 1px solid #ffc107;
+  border-radius: var(--radius);
+  margin: 10px 0;
+  color: #856404;
+}
+
+/* Booking Summary */
+.booking-summary {
+  background: var(--card-bg);
+  padding: 15px;
+  border-radius: var(--radius);
+  border: 1px solid var(--border-color);
+  min-width: 250px;
+}
+
+.booking-summary h4 {
+  margin-top: 0;
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+.total-amount {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin: 10px 0;
+}
+
+/* Link Styling */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Loading States */
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  color: var(--text-secondary);
+}
+
+/* Empty States */
+.empty-state {
+  text-align: center;
+  padding: 3rem;
+  color: var(--text-secondary);
+}
+
+.empty-state h3 {
+  color: var(--text-secondary);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.fade-in {
+  animation: fadeIn 0.3s ease-out;
+}
+
+/* Top Bar */
+.topbar {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+/* Link Styling */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    margin: 10px;
+    padding: 15px;
+  }
+  
+  .header {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .seat {
+    width: 30px;
+    height: 30px;
+    font-size: 0.7rem;
+  }
+  
+  .booking-summary {
+    min-width: auto;
+    width: 100%;
+  }
+}
